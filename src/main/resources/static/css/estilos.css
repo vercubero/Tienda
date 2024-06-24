@@ -1,6 +1,11 @@
 #contenedorTitulo {
     text-align: center;
     color:blue;
+    border: 2px solid springgreen;
+    width: 50%;
+    background-color: bisque;
+    /*Centrar un Div*/
+    margin: 0 auto;
 }
 
 .parrafoSecundario{
@@ -10,4 +15,36 @@
 
 p span{
     color: greenyellow;
+}
+
+p span#textoImportante {
+    color:cornflowerblue;
+}
+
+a{
+    border: 2px solid navy;
+    background-color: darkblue;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+
+a:link{
+    color: darkorange;
+    font-size: 20px;
+}
+
+a:visited{
+    color: chartreuse;
+}
+
+a:hover{
+    background: green;
+    color:white;
+}
+
+a:active{
+    background: purple;
+    color: white;
 }

@@ -1,50 +1,61 @@
-#contenedorTitulo {
+#encabezado{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    background-color: #496D8D;
+    color: white;
+}
+#menu{
+    position: absolute;
+    top: 8%;
+    left: 0;
+    height: 4%;
+    width: 100%;
+    background-color: cadetblue;
+    color: white;
+}
+#barraLateral{
+    position: absolute;
+    top: 12%;
+    left: 0;
+    height: 81%;
+    width: 20%;
+    background-color: #8e27f6;
+    color: black;
+}
+#contenido{
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    height: 81%;
+    width: 80%;
+    background-color: gainsboro;
+    color: black;
+    overflow: auto;
+}
+#piepagina{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    height: 7%;
+    width: 100%;
+    background-color: #87f29b;
+    color: black;
     text-align: center;
-    color:blue;
-    border: 2px solid springgreen;
-    width: 50%;
-    background-color: bisque;
-    /*Centrar un Div*/
-    margin: 0 auto;
 }
-
-.parrafoSecundario{
-    font-size: 22px;
-    color: coral;
-}
-
-p span{
-    color: greenyellow;
-}
-
-p span#textoImportante {
-    color:cornflowerblue;
-}
-
-a{
-    border: 2px solid navy;
-    background-color: darkblue;
-    color: white;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 10px;
-}
-
-a:link{
-    color: darkorange;
+#encabezadoTabla{
     font-size: 20px;
-}
-
-a:visited{
-    color: chartreuse;
-}
-
-a:hover{
-    background: green;
-    color:white;
-}
-
-a:active{
-    background: purple;
     color: white;
+    background-color: cadetblue;
+}
+#tablaResumen tr{
+    font-size: 25px;
+}
+#tablaResumen tr:nth-child(odd){
+    background-color: gold;
+}
+#tablaResumen tr:nth-child(even){
+    background-color: coral;
 }

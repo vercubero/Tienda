@@ -13,4 +13,10 @@ public class IndexController {
         return "index";
     }
     
+    @RequestMapping("/test")
+    public String test(Model model) {
+        model.addAttribute("attribute", "value");
+        return "prueba";
+    }
+    
 }

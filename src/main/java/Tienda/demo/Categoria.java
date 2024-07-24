@@ -26,4 +26,12 @@ public class Categoria implements Serializable {
         this.rutalmagen = rutalmagen;
         this.activo = activo;
     }
+
+    Long getIdCategoria() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void setRutaImagen(String cargaImagen) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

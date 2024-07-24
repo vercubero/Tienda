@@ -11,27 +11,25 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class CategoriaServiceImpl implements CategoriaService {
 
-    @Autowired
+     @Autowired
     private CategoriaDao categoriaDao;
 
     @Override
-    public List<Categoria> getCategorias(boolean activo) {
-        List<Categoria> lista = categoriaDao.findAll();
-
-        //Filtrar si quiero solo activos
-        if (activo) {
-            lista.removeIf(c -> !c.isActivo());
+    @Transactional(readOnly = true)
+    public List<Categoria> getCategorias(boolean activos) {
+        var lista = categoriaDao.findAll();
+        if (activos) {
+            lista.removeIf(e -> !e.isActivo());
         }
         return lista;
     }
 
-     @Override
-    @Transactional(readOnly=true)
+    @Override
+    @Transactional(readOnly = true)
     public Categoria getCategoria(Categoria categoria) {
         return categoriaDao.findById(categoria.getIdCategoria()).orElse(null);
     }
 
-    
     @Override
     @Transactional
     public void save(Categoria categoria) {

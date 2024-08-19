@@ -1,6 +1,6 @@
 package Tienda.demo.service;
 
-import com.tienda_vt.domain.Producto;
+import Tienda.demo.domain.Producto;
 import java.util.List;
 
 

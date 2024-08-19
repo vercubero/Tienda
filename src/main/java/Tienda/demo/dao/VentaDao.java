@@ -1,6 +1,6 @@
 package Tienda.demo.dao;
 
-import com.tienda.domain.Venta;
+import Tienda.demo.domain.Venta;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

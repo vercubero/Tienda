@@ -4,7 +4,7 @@
  */
 package Tienda.demo.service;
 
-import com.tienda_vt.domain.Item;
+import Tienda.demo.domain.Item;
 import java.util.ArrayList;
 import java.util.List;
 

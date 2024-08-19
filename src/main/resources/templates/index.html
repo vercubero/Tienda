@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">>
-    <head th:replace="layout/plantilla ::head">
-    </head>
-    <body>
-       <header th:replace="layout/plantilla :: header" />
-       
-       <footer th:replace="layout/plantilla :: footer" />
-    </body>
+       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6"
+       xmlns:th="http://www.thymeleaf.org">
+   
+    <head th:replace="~{layout/plantilla :: head}"> <!-- Comienza encabezado -->
+        <title>TechShop</title> <!-- El titulo de la pagina -->
+    </head> 
+    <body> 
+        <header th:replace="~{layout/plantilla :: header}"/> 
+        <section th:replace="~{carrito/fragmentos :: listadoProductos}"/>  
+        <footer th:replace="~{layout/plantilla :: footer}"/>
+    </body> <!-- Cierra el cuerpo -->
 </html>

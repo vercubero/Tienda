@@ -1,10 +1,10 @@
 package Tienda.demo.controller;
 
 
-import com.tienda.demo.Item;
-import com.tienda.demo.domain.Producto;
-import com.tienda.demo.service.ItemService;
-import com.tienda_vt.service.ProductoService;
+import Tienda.demo.domain.Item;
+import Tienda.demo.domain.Producto;
+import Tienda.demo.service.ItemService;
+import Tienda.demo.service.ProductoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
